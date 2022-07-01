@@ -273,7 +273,7 @@
                                                   "Filter: expensive venues" (:id where-snippet)})})}]]
     (testing "multiple snippets are correctly expanded in parent query"
       (is (= (mt/native-query
-               {:query "SELECT name, price FROM venues WHERE price > 2", :params nil})
+               {:query "SELECT name, price FROM venues WHERE price > 2", :params []})
              (substitute-params (:dataset_query card)))))
 
     (testing "multiple snippets are expanded from saved sub-query"
