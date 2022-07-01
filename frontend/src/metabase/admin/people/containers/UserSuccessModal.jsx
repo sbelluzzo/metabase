@@ -24,8 +24,8 @@ class UserSuccessModal extends React.Component {
   render() {
     const { onClose, user, temporaryPassword } = this.props;
     const isEeSsoConfigured =
-      MetabaseSettings.ssoConfigured() &&
-      !MetabaseSettings.passwordLoginEnabled();
+      MetabaseSettings.isSsoConfigured() &&
+      !MetabaseSettings.isPasswordLoginEnabled();
     return (
       <ModalContent
         title={t`${user.common_name} has been added`}
