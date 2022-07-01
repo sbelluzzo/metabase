@@ -1,4 +1,5 @@
 export const FIELD_PRIORITY = [
+  "type/Date",
   "type/DateTime",
   "type/DateTimeWithTZ",
   "type/DateTimeWithLocalTZ",
